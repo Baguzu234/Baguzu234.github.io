@@ -1,0 +1,5 @@
+JP-Gothic.woff2 FONTLOG
+Aug. 18, 2025
+Baguzu234
+
+I converted the original TTF file(https://fonts.google.com/noto/specimen/Noto+Sans+JP) to this WOFF2 file.
