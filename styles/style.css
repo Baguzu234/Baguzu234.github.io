@@ -1,0 +1,87 @@
+/* 全般 */
+body {
+    margin: 0;
+}
+
+header {
+    background: pink;
+}
+
+header > h1 {
+    margin-top: 0;
+    padding: 0.25em;
+}
+
+footer {
+    background: palegreen;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+/* ナビゲーションバー関連 */
+.header-nav {
+    display: flex;
+    gap: 1em;
+    justify-content: right;
+}
+
+.header-nav a {
+    background: palegoldenrod;
+    width: 10vw;
+    text-align: center;
+    line-height: 3;
+}
+
+.header-nav a:link,
+.header-nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.header-nav a:link:focus,
+.header-nav a:link:hover {
+    background-color: rgb(201, 196, 143);
+}
+
+.header-nav a:link:active {
+    background-color: rgb(123, 120, 85);
+}
+
+.header-nav a.disabled {
+    opacity: 30%;
+}
+
+/* 「作ったもの」リスト関連 */
+/*
+ナビゲーションバーのほうでは<nav>に直接リンクを入れているのに対し、
+こっちではulを使っている。ばらばらで統一感がないけど、何が正しいのか。
+*/
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.work {
+    padding: 0;
+}
+
+.work a {
+    display: block;
+    border: solid 4px gray;
+    text-decoration: none;
+    color: black;
+}
+
+.work a:visited{
+    color: black;
+}
+
+.work a:focus,
+.work a:hover {
+    text-decoration: underline;
+    background-color: rgb(205, 205, 205);
+}
