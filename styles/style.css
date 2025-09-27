@@ -28,7 +28,8 @@ ul {
     justify-content: right;
 }
 
-.header-nav a {
+.header-nav a,
+.header-nav span {
     background: palegoldenrod;
     width: 10vw;
     text-align: center;
@@ -41,16 +42,16 @@ ul {
     text-decoration: none;
 }
 
-.header-nav a:link:focus,
-.header-nav a:link:hover {
+.header-nav a:focus,
+.header-nav a:hover {
     background-color: rgb(201, 196, 143);
 }
 
-.header-nav a:link:active {
+.header-nav a:active {
     background-color: rgb(123, 120, 85);
 }
 
-.header-nav a.disabled {
+.header-nav span {
     opacity: 30%;
 }
 
