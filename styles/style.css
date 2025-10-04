@@ -31,9 +31,14 @@ ul {
 .header-nav a,
 .header-nav span {
     background: palegoldenrod;
-    width: 10vw;
+    width: 8em;  /* 全ボタン中の最大文字数の5文字と、脇に1.5文字分追加して、合わせて8em */
+    max-width: 30vw;
     text-align: center;
     line-height: 3;
+}
+
+.header-nav span {
+    opacity: 30%;
 }
 
 .header-nav a:link,
@@ -51,14 +56,10 @@ ul {
     background-color: rgb(123, 120, 85);
 }
 
-.header-nav span {
-    opacity: 30%;
-}
-
 /* 「作ったもの」リスト関連 */
 /*
 ナビゲーションバーのほうでは<nav>に直接リンクを入れているのに対し、
-こっちではulを使っている。ばらばらで統一感がないけど、何が正しいのか。
+こっちではulを使っている。ばらばらで統一感がないけど何が正しいのか。
 */
 .work-list {
     display: flex;
