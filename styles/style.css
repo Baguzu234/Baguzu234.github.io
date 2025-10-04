@@ -32,7 +32,7 @@ ul {
 .header-nav span {
     background: palegoldenrod;
     width: 8em;  /* 全ボタン中の最大文字数の5文字と、脇に1.5文字分追加して、合わせて8em */
-    max-width: 30vw;
+    max-width: calc((100% - 2em) / 3);  /* スマホ用 */
     text-align: center;
     line-height: 3;
 }
